@@ -1,6 +1,6 @@
 # This is a multi-stage build. First we are going to compile and then
 # create a small image for runtime.
-FROM golang:1.11.1 as builder
+FROM 951188236506.dkr.ecr.ap-southeast-1.amazonaws.com/golang:1.11.1 as builder
 
 RUN mkdir -p /go/src/github.com/eks-workshop-sample-api-service-go
 WORKDIR /go/src/github.com/eks-workshop-sample-api-service-go
